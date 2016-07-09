@@ -10,7 +10,7 @@ export default class Timer extends Component {
   render() {
     let timeElapsed = this.props.timeElapsed;
     return(
-      <View style={styles.container}>
+      <View style={styles.timeWrapper}>
         <Text style={styles.timer}>
           {FormatTime(timeElapsed)}
         </Text>
@@ -25,5 +25,10 @@ const styles = StyleSheet.create({
   },
   timer: {
     fontSize: 60,
+  },
+  timeWrapper: {
+    flex: 5,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
 });

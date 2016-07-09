@@ -15,9 +15,9 @@ export default class Laps extends Component {
     )
   }
 
-  // shouldComponentUpdate (nextProps, nextState) {
-  //   return this.props.laps.lenght != nextProps.laps.lenght;
-  // }
+  shouldComponentUpdate (nextProps, nextState) {
+    return this.props.laps.length != nextProps.laps.length;
+  }
 
   laps() {
     return this.props.laps.map((time, index) => {

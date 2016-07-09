@@ -20,9 +20,13 @@ export default class Main extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Timer timeElapsed={this.state.timeElapsed} />
-        <Controls running={this.state.running} handleStartPress={this.handleStartPress} handleLapPress={this.handleLapPress}/>
-        <Laps laps={this.state.laps}/>
+        <View style={styles.header}>
+          <Timer timeElapsed={this.state.timeElapsed} />
+          <Controls running={this.state.running} handleStartPress={this.handleStartPress} handleLapPress={this.handleLapPress}/>
+        </View>
+        <View style={styles.footer}>
+          <Laps laps={this.state.laps}/>
+        </View>
       </View>
     )
   }
@@ -60,5 +64,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'stretch',
-  }
+  },
+  header: {
+    flex: 1
+  },
+  footer: {
+    flex: 1
+  },
 });

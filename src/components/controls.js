@@ -10,7 +10,7 @@ export default class Controls extends Component {
 
   render() {
     return (
-      <View style={[styles.buttonWrapper]}>
+      <View style={styles.buttonWrapper}>
       {this.startStopButton()}
       {this.lapButton()}
       </View>
