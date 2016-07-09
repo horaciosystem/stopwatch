@@ -1,5 +1,5 @@
 import React from 'react';
 import { AppRegistry } from 'react-native';
-import StopWatch from './src/components/stop_watch';
+import Main from './src/main';
 
-AppRegistry.registerComponent('stopwatch', () => StopWatch);
+AppRegistry.registerComponent('stopwatch', () => Main);

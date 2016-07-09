@@ -88,7 +88,6 @@ class StopWatch extends Component {
 
   handleStartPress() {
     if (this.state.running) {
-      clearInterval(this.interval);
       this.setState({running: false});
       return;
     }
@@ -104,6 +103,7 @@ class StopWatch extends Component {
         running: true,
       });
     }, 30);
+
   }
 
   handleLapPress() {
